@@ -1,0 +1,12 @@
+{
+  "menu": [
+    "0) List all files in current location.",
+    "1) Create me new file.",
+    "2) GIT - make it a new repo",
+    "3) Build this project",
+    "4) Let's play a game - Dice Lairs?",
+    "5} Show yourself!",
+    "6} Lorem ipsum!",
+    "9} Kill yourself!"
+  ]
+}

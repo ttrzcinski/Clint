@@ -1,0 +1,11 @@
+c:\vsproj\Clint\Clint\Clint\bin\Debug\netcoreapp2.1\Clint.deps.json
+c:\vsproj\Clint\Clint\Clint\bin\Debug\netcoreapp2.1\Clint.runtimeconfig.json
+c:\vsproj\Clint\Clint\Clint\bin\Debug\netcoreapp2.1\Clint.runtimeconfig.dev.json
+c:\vsproj\Clint\Clint\Clint\bin\Debug\netcoreapp2.1\Clint.dll
+c:\vsproj\Clint\Clint\Clint\bin\Debug\netcoreapp2.1\Clint.pdb
+c:\vsproj\Clint\Clint\Clint\obj\Debug\netcoreapp2.1\Clint.csprojAssemblyReference.cache
+c:\vsproj\Clint\Clint\Clint\obj\Debug\netcoreapp2.1\Clint.csproj.CoreCompileInputs.cache
+c:\vsproj\Clint\Clint\Clint\obj\Debug\netcoreapp2.1\Clint.AssemblyInfoInputs.cache
+c:\vsproj\Clint\Clint\Clint\obj\Debug\netcoreapp2.1\Clint.AssemblyInfo.cs
+c:\vsproj\Clint\Clint\Clint\obj\Debug\netcoreapp2.1\Clint.dll
+c:\vsproj\Clint\Clint\Clint\obj\Debug\netcoreapp2.1\Clint.pdb

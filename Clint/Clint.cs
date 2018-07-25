@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Clint.backend.menuses;
+using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Speech.Synthesis;
+//using System.Speech.Synthesis; //only in .NET Standard
 
 namespace Clint
 {
@@ -77,23 +79,25 @@ namespace Clint
             Console.WriteLine("How can help?");
             FastConsole.lineBreak();
             //TODO CONSUME JSON AND USE IT ON SCREEN
-            Console.WriteLine("0) List all files in current location.");
-            Console.WriteLine("1) Create me new file.");
-            Console.WriteLine("2) GIT - make it a new repo");
-            Console.WriteLine("3) Build this project");
-            //Make it a battleship game with use of nukes and real world map?!
-            Console.WriteLine("4) Let's play a game - Dice Lairs?");//WWIII?!");
-            Console.WriteLine("5} Show yourself!");
-            Console.WriteLine("6} Lorem ipsum!");
-            Console.WriteLine("9} Kill yourself!");
 
+            int numberOfItems = 0;
+            //List<MenuItem> o = //JsonConvert.DeserializeObject<List<MenuItem>>(string json);
+            List<MenuItem> menuItems = Convert_JSON2Menu.parseJSONFile();//parseJSON();
+            foreach (MenuItem menuItem in menuItems) {
+                Console.WriteLine(menuItem.asMenuEntry());
+                numberOfItems++;
+            }
+            //If there was nothing
+            if (numberOfItems == 0)
+            {
+                Console.WriteLine("9) Kill yourself!");
+            }
+            
             bool alive = true;
             while (alive)
             {
                 var choice = Console.ReadLine();
                 //var date = DateTime.Now;
-
-                //var choice = "5";
                 switch (choice)
                 {
                     case "1":

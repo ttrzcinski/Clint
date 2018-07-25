@@ -41,6 +41,7 @@ namespace Clint.backend.menuses
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine($"Exception occured: {ex}");
                     invalidItems = invalidItems ?? new List<string>();
                     invalidItems.Add(item.ToString());
                 }
@@ -88,7 +89,7 @@ namespace Clint.backend.menuses
             }
 
             file.Close();
-            System.Console.WriteLine("There were {0} lines.", counter);
+            Console.WriteLine("There were {0} lines.", counter);
             // Suspend the screen.  
             Console.ReadLine();
             return lines;

@@ -70,14 +70,14 @@ namespace Clint
 
         static void Main(string[] args)
         {
-            FastConsole.lineBreak();
-            FastConsole.emptyLine();
+            FastConsole.LineBreak();
+            FastConsole.EmptyLine();
             //CHANGE THIS TRUE TO PROPERTY
             clientTalk("Clint welcomes You:");
-            FastConsole.emptyLine();
-            FastConsole.lineBreak();
+            FastConsole.EmptyLine();
+            FastConsole.LineBreak();
             Console.WriteLine("How can help?");
-            FastConsole.lineBreak();
+            FastConsole.LineBreak();
             //TODO CONSUME JSON AND USE IT ON SCREEN
 
             int numberOfItems = 0;
@@ -123,12 +123,12 @@ namespace Clint
                             clientTalk("File already exists.");
                         }
 
-                        FastConsole.pressAnyKey();
+                        FastConsole.PressAnyKey();
                         break;
 
                     case "5":
                         clientTalk("", true);
-                        FastConsole.pressAnyKey();
+                        FastConsole.PressAnyKey();
                         break;
 
                     case "6":
@@ -140,12 +140,12 @@ namespace Clint
                             "dotnet.exe'(CoreCLR: clrhost): Loaded 'C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\2.1.1\\System.Runtime.dll'" +
                             ".Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled."};
                         clientTalk(longText);
-                        FastConsole.pressAnyKey();
+                        FastConsole.PressAnyKey();
                         break;
 
                     case "9":
                         clientTalk("KILL");
-                        FastConsole.pressAnyKey();
+                        FastConsole.PressAnyKey();
                         alive = false;
                         break;
 

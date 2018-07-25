@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clint", "Clint\Clint.csproj", "{ED60EB80-3F2D-4BA5-980D-F58AD9EA47D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clint", "Clint\Clint.csproj", "{ED60EB80-3F2D-4BA5-980D-F58AD9EA47D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{BCBC7282-4931-4D21-BCB1-8AFF679C97F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{ED60EB80-3F2D-4BA5-980D-F58AD9EA47D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED60EB80-3F2D-4BA5-980D-F58AD9EA47D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED60EB80-3F2D-4BA5-980D-F58AD9EA47D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBC7282-4931-4D21-BCB1-8AFF679C97F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBC7282-4931-4D21-BCB1-8AFF679C97F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBC7282-4931-4D21-BCB1-8AFF679C97F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBC7282-4931-4D21-BCB1-8AFF679C97F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

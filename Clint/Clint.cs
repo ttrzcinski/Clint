@@ -86,18 +86,8 @@ namespace Clint
             }
         }
 
-        private static void ShowMenu()
+        private static void showMainMenu()
         {
-            FastConsole.LineBreak();
-            FastConsole.EmptyLine();
-            //CHANGE THIS TRUE TO PROPERTY
-            ClientTalk("Clint welcomes You:");
-            FastConsole.EmptyLine();
-            FastConsole.LineBreak();
-            Console.WriteLine("How can help?");
-            FastConsole.LineBreak();
-            //TODO CONSUME JSON AND USE IT ON SCREEN
-
             var numberOfItems = 0;
             var menuItems = Convert_JSON2Menu.ParseJsonFile();
             foreach (var menuItem in menuItems) {
@@ -109,6 +99,21 @@ namespace Clint
             {
                 Console.WriteLine("9) Kill yourself!");
             }
+        }
+
+        private static void ShowClint()
+        {
+            FastConsole.LineBreak();
+            FastConsole.EmptyLine();
+            //CHANGE THIS TRUE TO PROPERTY
+            ClientTalk("Clint welcomes You:");
+            FastConsole.EmptyLine();
+            FastConsole.LineBreak();
+            Console.WriteLine("How can help?");
+            FastConsole.LineBreak();
+            //TODO CONSUME JSON AND USE IT ON SCREEN
+
+            showMainMenu();
 
             var alive = true;
             while (alive)
@@ -117,6 +122,11 @@ namespace Clint
                 //var date = DateTime.Now;
                 switch (choice)
                 {
+                    case "0":
+                        showMainMenu();
+                        FastConsole.PressAnyKey();
+                        break;
+                    
                     case "1":
                         MakeMeAFile();
                         FastConsole.PressAnyKey();
@@ -157,7 +167,7 @@ namespace Clint
 
         static void Main(string[] args)
         {
-            ShowMenu();
+            ShowClint();
         }
     }
 }

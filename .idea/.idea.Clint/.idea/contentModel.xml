@@ -12,15 +12,20 @@
             <e p="AsciiConnectio.cs" t="Include" />
             <e p="AsciiFace.cs" t="Include" />
           </e>
+          <e p="converters" t="Include">
+            <e p="Convert_JSON2Menu.cs" t="Include" />
+          </e>
           <e p="D20.cs" t="Include" />
           <e p="enums" t="Include">
             <e p="AutoCommit.cs" t="Include" />
           </e>
           <e p="FastConsole.cs" t="Include" />
           <e p="menuses" t="Include">
-            <e p="Convert_JSON2Menu.cs" t="Include" />
             <e p="games.json" t="Include" />
+            <e p="git_menu.json" t="Include" />
             <e p="menu_main.json" t="Include" />
+          </e>
+          <e p="model" t="Include">
             <e p="MenuItem.cs" t="Include" />
           </e>
           <e p="workers" t="Include">
@@ -44,6 +49,7 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="UnitTests" t="IncludeRecursive">
         <e p="backend" t="Include">
+          <e p="AutoCommitTest.cs" t="Include" />
           <e p="D20Tests.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />

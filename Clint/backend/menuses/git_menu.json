@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "entry": "..Back"
+  },
+  {
+    "id": 1,
+    "entry": "Initialize new repository"
+  },
+  {
+    "id": 2,
+    "entry": "Synchronize"
+  },
+  {
+    "id": 3,
+    "entry": "Add new files and directories"
+  },
+  {
+    "id": 4,
+    "entry": "Remove files and directories"
+  },
+  {
+    "id": 5,
+    "entry": "Auto Commit"
+  }
+]

@@ -17,19 +17,21 @@ namespace Clint.backend.workers
         public AutoCommit AutoCommit { get; set; }
         // TODO Keeps current location as a project/solution
         private string _currentLocation;
+        /// <summary>
+        /// Current location of project, over which works GitWorker.
+        /// </summary>
+        public string CurrentLocation
+        {
+            get => _currentLocation;
+            set => _currentLocation = value;
+        }
 
         //Constructors
         GitWorker(string login, string location, AutoCommit autoCommit = AutoCommit.Off)
         {
+            _currentLocation = string.IsNullOrEmpty(location) ? location : Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()));
+            
             _login = login;
-            if (string.IsNullOrEmpty(location))
-            {
-                _currentLocation = location;
-            }
-            else
-            {
-                _currentLocation = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));
-            }
 
             AutoCommit = autoCommit;
         }
@@ -58,22 +60,25 @@ namespace Clint.backend.workers
             // TODO Call console with git push origin master
         }
 
-        public void Sync()
+        public void Sync(bool mine = false)
         {
             // TODO Assure, that there is .git and it is initialized
             
-            // TODO Call console with fetch
+            // TODO Call console with git fetch
             
-            // TODO 
+            // TODO Compare, if in fetch there is something in collision with things changes in status
+            
+            // TODO if mine is null, Call console with git pull
         }
 
-        public void AddAll()
+        public void Add(string fileNames)
         {
             // TODO Assure, that there is .git and it is initialized
             
             // TODO Check, if there are some files to add with git status or git diff
             
-            // TODO Call console with git add .
+            // TODO if fileNames given, Call console with git add {fileNames}
+            // TODO else, Call console with git add .
             
             // TODO Prepare list of added files into a comment
             
@@ -111,7 +116,7 @@ namespace Clint.backend.workers
             // TODO Call console with git commit -m {message}
         }
 
-        public void PushMyChanges(bool force = false)
+        public void Push(bool force = false)
         {
             // TODO check, if there is something to push actually (was committed and hangs0
             
@@ -143,15 +148,6 @@ namespace Clint.backend.workers
         public string LastCommand
         {
             get => _lastCommand ?? "(There was none yet.)";
-        }
-
-        /// <summary>
-        /// Returns current location of project, over which works GitWorker.
-        /// </summary>
-        /// <returns>current location</returns>
-        public string CurrentLocation()
-        {
-            return _currentLocation;
         }
     }
 }

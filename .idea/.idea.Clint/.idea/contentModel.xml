@@ -13,13 +13,15 @@
             <e p="AsciiFace.cs" t="Include" />
           </e>
           <e p="converters" t="Include">
-            <e p="Convert_JSON2Menu.cs" t="Include" />
+            <e p="ConvertJSON2Menu.cs" t="Include" />
+            <e p="CovertJSONTo.cs" t="Include" />
           </e>
           <e p="D20.cs" t="Include" />
           <e p="enums" t="Include">
             <e p="AutoCommit.cs" t="Include" />
           </e>
           <e p="FastConsole.cs" t="Include" />
+          <e p="interfaces" t="Include" />
           <e p="menuses" t="Include">
             <e p="games.json" t="Include" />
             <e p="git_menu.json" t="Include" />

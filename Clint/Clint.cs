@@ -1,7 +1,8 @@
-﻿using Clint.backend.menuses;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Clint.backend.converters;
+
 //using System.Speech.Synthesis; //only in .NET Standard
 
 namespace Clint
@@ -15,47 +16,47 @@ namespace Clint
         /// Chops line strings into lines and passes them to client as response. 
         /// </summary>
         /// <param name="line">line to chop</param>
-        /// <param name="faceShown">flag of showing face, by default true</param>
+        /// <param name="faceShown">shows face, by default true</param>
         private static void ClientTalk(string line, bool faceShown = true)
         {
             //Chop line string to lines
-            var tokens = line != null ? line.Split('\n') : new[] { "" };
-            ClientTalk(tokens, faceShown);
+            var lines = line != null ? line.Split('\n') : new[] { "" };
+            ClientTalk(lines, faceShown);
         }
 
         /// <summary>
-        /// 
+        /// Passes lines them to client as response. 
         /// </summary>
-        /// <param name="given"></param>
-        /// <param name="faceShown"></param>
-        private static void ClientTalk(string[] given, bool faceShown = true)
+        /// <param name="lines">lines to present</param>
+        /// <param name="faceShown">shows face, by default true</param>
+        private static void ClientTalk(string[] lines, bool faceShown = true)
         {
             if (faceShown)
             {
                 //AsciiFace asciiFace = new AsciiFace();
                 var faceNow = AsciiFace.happyBot;
-                if (given[0].StartsWith("KILL"))
+                if (lines[0].StartsWith("KILL"))
                 {
                     faceNow = AsciiFace.killedBot;
-                    given = new[]{"Aaaaccckhhh..."};
+                    lines = new[]{"Aaaaccckhhh..."};
                 }
 
                 //foreach (var line in faceNow)
-                for (int i = 0; i < Math.Max(given.Length, faceNow.Length); i++)
+                for (int i = 0; i < Math.Max(lines.Length, faceNow.Length); i++)
                 {
                     var lineLeft = i < faceNow.Length ? faceNow[i] : "          ";
                     // TODO FIX CHOPPING TO THE END OF LINE
-                    var lineRight = i < given.Length ? given[i] : "";
+                    var lineRight = i < lines.Length ? lines[i] : "";
                     Console.WriteLine($"{lineLeft} {lineRight}");
                 }
             }
             else
             {
-                Console.WriteLine(given);
+                Console.WriteLine(lines);
             }
         }
 
-        private static string ClientAsks(String question)
+        private static string ClientAsks(string question)
         {
             ClientTalk(question);
             return Console.ReadLine();
@@ -64,7 +65,7 @@ namespace Clint
         private static void MakeMeAFile()
         {
             var currDirectory = Directory.GetCurrentDirectory();
-            ClientTalk("We are in " + currDirectory);
+            ClientTalk($"We are in {currDirectory}");
             //Ask about name of file
             var fileName = ClientAsks("How this file should be named?");
             //Obtain current directory
@@ -81,21 +82,42 @@ namespace Clint
             }
             else
             {
-                //TODO ADD PARAM IN STRING TO FILL WITH FILE NAME
-                ClientTalk("File already exists.");
+                // Inform about existence of file.
+                ClientTalk(string.Format("File (fileName) already exists.", fileName));
             }
         }
 
-        private static void showMainMenu()
+        private static void ShowMainMenu()
         {
-            var numberOfItems = 0;
-            var menuItems = Convert_JSON2Menu.ParseJsonFile();
-            foreach (var menuItem in menuItems) {
-                Console.WriteLine(menuItem.asMenuEntry());
-                numberOfItems++;
+            var fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
+            var menuItems = CovertJSONTo.ParseJsonFile(fullPath);
+            // If there was nothing
+            if (menuItems.Count != 0)
+            {
+                foreach (var menuItem in menuItems)
+                {
+                    Console.WriteLine(menuItem.asMenuEntry());
+                }
             }
-            //If there was nothing
-            if (numberOfItems == 0)
+            else
+            {
+                Console.WriteLine("9) Kill yourself!");
+            }
+        }
+        
+        private static void ShowGitMenu()
+        {
+            var fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\git_menu.json";
+            var menuItems = CovertJSONTo.ParseJsonFile(fullPath);
+            // If there was nothing
+            if (menuItems.Count != 0)
+            {
+                foreach (var menuItem in menuItems)
+                {
+                    Console.WriteLine(menuItem.asMenuEntry());
+                }
+            }
+            else
             {
                 Console.WriteLine("9) Kill yourself!");
             }
@@ -113,7 +135,7 @@ namespace Clint
             FastConsole.LineBreak();
             //TODO CONSUME JSON AND USE IT ON SCREEN
 
-            showMainMenu();
+            ShowMainMenu();
 
             var alive = true;
             while (alive)
@@ -123,12 +145,17 @@ namespace Clint
                 switch (choice)
                 {
                     case "0":
-                        showMainMenu();
+                        ShowMainMenu();
                         FastConsole.PressAnyKey();
                         break;
                     
                     case "1":
                         MakeMeAFile();
+                        FastConsole.PressAnyKey();
+                        break;
+                    
+                    case "2":
+                        ShowGitMenu();
                         FastConsole.PressAnyKey();
                         break;
 

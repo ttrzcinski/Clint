@@ -1,24 +1,26 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Clint.backend.model;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
-namespace Clint.backend.menuses
+namespace Clint.backend.converters
 {
-    /**
-     * Converts between JSON and Menu Items list.
-     */
-    class Convert_JSON2Menu
+    /// <summary>
+    /// Converts between JSON and Menu Items list. 
+    /// </summary>
+    class ConvertJson2Menu
     {
-        /**
-         * 
-         */
-        public static List<MenuItem> ParseJsonFile()
+        /// <summary>
+        /// Coverts JSON file into List of Menu Items.
+        /// </summary>
+        /// <param name="fullPath"></param>
+        /// <returns></returns>
+        public static List<MenuItem> ParseJsonFile(string fullPath)
         {
             //TODO: Fix the path top search from within the project
             //TODO: Change to relative path
-            const string fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
             using (var r = new StreamReader(fullPath))
             {
                 var json = r.ReadToEnd();
@@ -49,7 +51,7 @@ namespace Clint.backend.menuses
             return items;
         }
 
-        public static List<MenuItem> ParseJson()
+        /*public static List<MenuItem> ParseJson()
         {
             //string fullPath = "C:\vsproj\\Clint\\Clint\\backend\\menuses\\menu_main.json";
             const string json = @"[
@@ -63,24 +65,23 @@ namespace Clint.backend.menuses
                 {id:9, entry: 'Kill yourself!'}
             ]";
 
-            List<MenuItem> items = (List<MenuItem>)DeserializeToList<MenuItem>(json);
+            var items = (List<MenuItem>)DeserializeToList<MenuItem>(json);
 
             return items;
-        }
+        }*/
 
-        public static List<string> ParseFile()
+        /*public static List<string> ParseFile()
         {
             var lines = new List<string>();
 
-            var fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
+            const string fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
             var counter = 0;
             string line;
 
             // Read the file and display it line by line.  
             var file = new StreamReader(fullPath);
 
-            //TODO Check, if file exists
-
+            //Check, if file exists
             while ((line = file.ReadLine()) != null)
             {
                 Console.WriteLine(line);
@@ -89,10 +90,10 @@ namespace Clint.backend.menuses
             }
 
             file.Close();
-            Console.WriteLine("There were {0} lines.", counter);
+            Console.WriteLine($"There were {counter} lines.");
             // Suspend the screen.  
             Console.ReadLine();
             return lines;
-        }
+        }*/
     }
 }

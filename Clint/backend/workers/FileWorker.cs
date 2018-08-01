@@ -24,6 +24,9 @@ namespace Clint.backend.workers
         {
             // TODO Call OS to create a file with console 
             // TODO create empty files - for now
+            
+            
+            
             return false;
         }
 

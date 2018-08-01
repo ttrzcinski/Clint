@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Clint.backend.menuses
+namespace Clint.backend.model
 {
     // Represents a single menu item from any menu.
     /// <summary>
     /// Represents a single menu item from any menu.
     /// </summary>
-    class MenuItem
+    public class MenuItem
     {
         public int Id { get; set; }
         public String Entry { get; set; }

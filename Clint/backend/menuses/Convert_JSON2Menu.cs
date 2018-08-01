@@ -14,15 +14,15 @@ namespace Clint.backend.menuses
         /**
          * 
          */
-        public static List<MenuItem> parseJSONFile()
+        public static List<MenuItem> ParseJsonFile()
         {
             //TODO: Fix the path top search from within the project
             //TODO: Change to relative path
-            string fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
-            using (StreamReader r = new StreamReader(fullPath))
+            const string fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
+            using (var r = new StreamReader(fullPath))
             {
-                string json = r.ReadToEnd();
-                List<MenuItem> items = JsonConvert.DeserializeObject<List<MenuItem>>(json);
+                var json = r.ReadToEnd();
+                var items = JsonConvert.DeserializeObject<List<MenuItem>>(json);
                 return items;
             }
         }
@@ -49,10 +49,10 @@ namespace Clint.backend.menuses
             return items;
         }
 
-        public static List<MenuItem> parseJSON()
+        public static List<MenuItem> ParseJson()
         {
             //string fullPath = "C:\vsproj\\Clint\\Clint\\backend\\menuses\\menu_main.json";
-            string json = @"[
+            const string json = @"[
 	            {id:0, entry: 'List all files in current location.'},
                 {id:1, entry: 'Create me new file.'},
                 {id:2, entry: 'GIT - make it a new repo'},
@@ -68,16 +68,16 @@ namespace Clint.backend.menuses
             return items;
         }
 
-        public static List<string> parseFile()
+        public static List<string> ParseFile()
         {
-            List<string> lines = new List<string>();
+            var lines = new List<string>();
 
-            string fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
-            int counter = 0;
+            var fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
+            var counter = 0;
             string line;
 
             // Read the file and display it line by line.  
-            StreamReader file = new StreamReader(fullPath);
+            var file = new StreamReader(fullPath);
 
             //TODO Check, if file exists
 

@@ -99,8 +99,7 @@ namespace Clint
             //TODO CONSUME JSON AND USE IT ON SCREEN
 
             var numberOfItems = 0;
-            //List<MenuItem> o = //JsonConvert.DeserializeObject<List<MenuItem>>(string json);
-            var menuItems = Convert_JSON2Menu.parseJSONFile();//parseJSON();
+            var menuItems = Convert_JSON2Menu.ParseJsonFile();
             foreach (var menuItem in menuItems) {
                 Console.WriteLine(menuItem.asMenuEntry());
                 numberOfItems++;

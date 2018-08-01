@@ -1,10 +1,11 @@
-//THIS CLASS WITH BE USED TO WRAP GIT COMMANDS AND CALL THE MFROM CURRENT DIRECTORY OR POINTED LOCATION
-using System;
+using System.IO;
 using Clint.backend.enums;
 
-namespace Clint
+namespace Clint.backend.workers
 {
-    /*  */
+    /// <summary>
+    /// Wraps around series of commands in git to make it easier to use.
+    /// </summary>
     class GitWorker
     {
         //Inner variables with fast accessors
@@ -18,11 +19,18 @@ namespace Clint
         private string _currentLocation;
 
         //Constructors
-        GitWorker(string login, string location, AutoCommit autoCommit)
+        GitWorker(string login, string location, AutoCommit autoCommit = AutoCommit.Off)
         {
             _login = login;
+            if (string.IsNullOrEmpty(location))
+            {
+                _currentLocation = location;
+            }
+            else
+            {
+                _currentLocation = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));
+            }
 
-            _currentLocation = location;
             AutoCommit = autoCommit;
         }
 
@@ -96,9 +104,20 @@ namespace Clint
             // TODO if directory, Call console with (depending of OS) rm -f filename
         }
 
+        public void Commit(string message)
+        {
+            // TODO check, if there is something to commit actually
+            
+            // TODO Call console with git commit -m {message}
+        }
+
         public void PushMyChanges(bool force = false)
         {
+            // TODO check, if there is something to push actually (was committed and hangs0
             
+            // TODO Check, is remote git repo is set
+            
+            // TODO Call console with git push
         }
 
         //Accessors
@@ -118,12 +137,21 @@ namespace Clint
         }*/
 
         /// <summary>
-        /// 
+        /// Returns last kept Command.
         /// </summary>
-        /// <returns></returns>
-        public string LastCommand()
+        /// <returns>command, if was used, brackets, if not</returns>
+        public string LastCommand
         {
-            return _lastCommand ?? "(There was none yet.)";
+            get => _lastCommand ?? "(There was none yet.)";
+        }
+
+        /// <summary>
+        /// Returns current location of project, over which works GitWorker.
+        /// </summary>
+        /// <returns>current location</returns>
+        public string CurrentLocation()
+        {
+            return _currentLocation;
         }
     }
 }

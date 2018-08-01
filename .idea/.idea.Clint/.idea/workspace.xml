@@ -2,39 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af655307-9c9d-4161-be1c-fea547f2fcf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Clint/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Clint/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Clint/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Clint/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Clint/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clint/backend/FileWorker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clint/backend/enums/AutoCommit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Clint/DesignTimeBuild/.dtbcache" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Clint/DesignTimeBuild/.dtbcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Clint/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Clint/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Clint/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Clint/v15/Server/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Clint/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Clint/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Clint/Clint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/Clint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/Clint.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/Clint.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/backend/GitWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/GitWorker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/backend/menuses/MenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/menuses/MenuItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/bin/Debug/netcoreapp2.1/Clint.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/bin/Debug/netcoreapp2.1/Clint.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/bin/Debug/netcoreapp2.1/Clint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/bin/Debug/netcoreapp2.1/Clint.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/obj/Clint.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/obj/Clint.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/obj/Debug/netcoreapp2.1/Clint.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/obj/Debug/netcoreapp2.1/Clint.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/obj/Debug/netcoreapp2.1/Clint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/obj/Debug/netcoreapp2.1/Clint.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/ClintTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/ClintTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/backend/D20Tests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/backend/D20Tests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/Clint.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/Clint.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/Clint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/Clint.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/Debug/netcoreapp2.1/UnitTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clint/backend/menuses/Convert_JSON2Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/menuses/Convert_JSON2Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clint/backend/workers/GitWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/workers/GitWorker.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,22 +25,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="6" />
+          <entry key="cs" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="6" />
+          <entry key="C#" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2604" />
+          <entry key="cs" value="4276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2604" />
+          <entry key="C#" value="4276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -80,92 +51,97 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Clint/Clint.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
-              <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+            <state relative-caret-position="1957">
+              <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
               <folding>
-                <marker date="1533110061499" expanded="false" signature="6:93" ph="..." />
-                <marker date="1533110061499" expanded="true" signature="167:5982" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="174:288" ph="/// This application serves as CLI for making templates inside code projects. ... " />
-                <marker date="1533110061499" expanded="true" signature="311:5980" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="326:578" ph="/// Chops line strings into lines and passes them to client as response.  ... " />
-                <marker date="1533110061499" expanded="true" signature="653:829" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="839:974" ph="///  ... " />
-                <marker date="1533110061499" expanded="true" signature="1052:1955" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="1089:1858" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="1259:1399" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="1529:1844" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="1875:1945" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="2014:2107" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="2150:2946" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="2561:2773" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="2636:2709" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="2790:2936" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="2986:5889" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="3629:3736" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="3807:3891" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="3948:5741" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="4086:5727" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="4484:5259" ph="{...}" />
-                <marker date="1533110061499" expanded="true" signature="5755:5879" ph="/* Console.Write($&quot;Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n&quot;); ... */" />
-                <marker date="1533110061499" expanded="true" signature="5930:5974" ph="{...}" />
+                <marker date="1533114723153" expanded="false" signature="6:93" ph="..." />
+                <marker date="1533114723153" expanded="true" signature="167:5873" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="174:288" ph="/// This application serves as CLI for making templates inside code projects. ... " />
+                <marker date="1533114723153" expanded="true" signature="311:5871" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="326:578" ph="/// Chops line strings into lines and passes them to client as response.  ... " />
+                <marker date="1533114723153" expanded="true" signature="653:829" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="839:974" ph="///  ... " />
+                <marker date="1533114723153" expanded="true" signature="1052:1955" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="1089:1858" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="1259:1399" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="1529:1844" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="1875:1945" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="2014:2107" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="2150:2946" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="2561:2773" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="2636:2709" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="2790:2936" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="2986:5780" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="3520:3627" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="3698:3782" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="3839:5632" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="3977:5618" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="4375:5150" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="5646:5770" ph="/* Console.Write($&quot;Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n&quot;); ... */" />
+                <marker date="1533114723153" expanded="true" signature="5821:5865" ph="{...}" />
+                <marker date="1533114723153" expanded="true" signature="5875:6383" ph="/* Ideas ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UnitTests/ClintTests.cs">
+        <entry file="file://$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="429">
+              <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
               <folding>
-                <marker date="1533110423849" expanded="true" signature="33:336" ph="{...}" />
-                <marker date="1533110423849" expanded="true" signature="63:334" ph="{...}" />
-                <marker date="1533110423849" expanded="true" signature="151:219" ph="{...}" />
-                <marker date="1533110423849" expanded="true" signature="269:328" ph="{...}" />
+                <marker date="1533116465067" expanded="true" signature="31:2348" ph="{...}" />
+                <marker date="1533116465067" expanded="true" signature="61:2346" ph="{...}" />
+                <marker date="1533116465067" expanded="true" signature="76:164" ph="/* Variables ... */" />
+                <marker date="1533116465067" expanded="true" signature="173:257" ph="/// Holds last used command for checks. ... " />
+                <marker date="1533116465067" expanded="true" signature="312:399" ph="/* Constructors ... */" />
+                <marker date="1533116465067" expanded="true" signature="417:693" ph="/// Creates files and directories based on given list to tokenize. ... " />
+                <marker date="1533116465067" expanded="true" signature="738:892" ph="{...}" />
+                <marker date="1533116465067" expanded="true" signature="761:856" ph="/* TODO Call OS to create a file with console ... */" />
+                <marker date="1533116465067" expanded="true" signature="902:1201" ph="/// Parses list of tuples to change from to and changes those file's names one by one. ... " />
+                <marker date="1533116465067" expanded="true" signature="1250:1355" ph="{...}" />
+                <marker date="1533116465067" expanded="true" signature="1365:1641" ph="/// Removes files and directories based on given list to tokenize. ... " />
+                <marker date="1533116465067" expanded="true" signature="1686:1791" ph="{...}" />
+                <marker date="1533116465067" expanded="true" signature="1801:2032" ph="/// Reports about current location info. ... " />
+                <marker date="1533116465067" expanded="true" signature="2092:2204" ph="{...}" />
+                <marker date="1533116465067" expanded="true" signature="2260:2340" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Clint/backend/GitWorker.cs">
+        <entry file="file://$PROJECT_DIR$/Clint/backend/workers/GitWorker.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1976">
-              <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+            <state relative-caret-position="296">
+              <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
               <folding>
-                <marker date="1533113979671" expanded="true" signature="110:144" ph="..." />
-                <marker date="1533113979671" expanded="true" signature="161:4247" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="194:4245" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="209:330" ph="/* Inner variables with fast accessors ... */" />
-                <marker date="1533113979671" expanded="true" signature="888:1015" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="1025:1063" ph="/* Inner methods ... */" />
-                <marker date="1533113979671" expanded="true" signature="1090:1814" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="1113:1804" ph="/* TODO Ask for login OR read it from global ... */" />
-                <marker date="1533113979671" expanded="true" signature="1842:2022" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="1865:2012" ph="/* TODO Assure, that there is .git and it is initialized ... */" />
-                <marker date="1533113979671" expanded="true" signature="2052:2539" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="2075:2529" ph="/* TODO Assure, that there is .git and it is initialized ... */" />
-                <marker date="1533113979671" expanded="true" signature="2618:2752" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="2632:2742" ph="/* TODO Fix location with current, if empty ... */" />
-                <marker date="1533113979671" expanded="true" signature="2852:3415" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="2866:3405" ph="/* TODO Ask about everything before acting on your own ... */" />
-                <marker date="1533113979671" expanded="true" signature="3470:3503" ph="{...}" />
-                <marker date="1533113979671" expanded="true" signature="3533:4032" ph="/* Returns current level of autoCommit flag. ... */" />
-                <marker date="1533113979671" expanded="true" signature="4042:4123" ph="///  ... " />
-                <marker date="1533113979671" expanded="true" signature="4159:4239" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Clint/backend/FileWorker.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding>
-                <marker date="1533111252416" expanded="true" signature="53:74" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="59:5002" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="66:171" ph="/// Wraps around series of commands in git to make it easier to use. ... " />
+                <marker date="1533116484595" expanded="true" signature="191:5000" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="206:327" ph="/* Inner variables with fast accessors ... */" />
+                <marker date="1533116484595" expanded="true" signature="902:1028" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="1038:1076" ph="/* Inner methods ... */" />
+                <marker date="1533116484595" expanded="true" signature="1103:1827" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="1126:1817" ph="/* TODO Ask for login OR read it from global ... */" />
+                <marker date="1533116484595" expanded="true" signature="1855:2035" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="1878:2025" ph="/* TODO Assure, that there is .git and it is initialized ... */" />
+                <marker date="1533116484595" expanded="true" signature="2065:2552" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="2088:2542" ph="/* TODO Assure, that there is .git and it is initialized ... */" />
+                <marker date="1533116484595" expanded="true" signature="2631:2765" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="2645:2755" ph="/* TODO Fix location with current, if empty ... */" />
+                <marker date="1533116484595" expanded="true" signature="2865:3428" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="2879:3418" ph="/* TODO Ask about everything before acting on your own ... */" />
+                <marker date="1533116484595" expanded="true" signature="3472:3635" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="3495:3625" ph="/* TODO check, if there is something to commit actually ... */" />
+                <marker date="1533116484595" expanded="true" signature="3690:3928" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="3713:3918" ph="/* TODO check, if there is something to push actually (was committed and hangs0 ... */" />
+                <marker date="1533116484595" expanded="true" signature="3958:4457" ph="/* Returns current level of autoCommit flag. ... */" />
+                <marker date="1533116484595" expanded="true" signature="4467:4612" ph="/// Returns last kept Command. ... " />
+                <marker date="1533116484595" expanded="true" signature="4646:4726" ph="{...}" />
+                <marker date="1533116484595" expanded="true" signature="4736:4897" ph="/// Returns current location of project, over which works GitWorker. ... " />
+                <marker date="1533116484595" expanded="true" signature="4937:4994" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -177,22 +153,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Clint/backend/GitWorker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clint/backend/FileWorker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clint/backend/workers/GitWorker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTests/ClintTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clint/backend/enums/AutoCommit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clint/backend/menuses/Convert_JSON2Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clint/Clint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTests/backend/D20Tests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Clint/Clint.cs" />
         <option value="$PROJECT_DIR$/UnitTests/ClintTests.cs" />
         <option value="$PROJECT_DIR$/UnitTests/backend/D20Tests.cs" />
         <option value="$PROJECT_DIR$/Clint/backend/FileWorker.cs" />
         <option value="$PROJECT_DIR$/Clint/backend/enums/AutoCommit.cs" />
         <option value="$PROJECT_DIR$/Clint/backend/GitWorker.cs" />
+        <option value="$PROJECT_DIR$/Clint/Clint.cs" />
+        <option value="$PROJECT_DIR$/Clint/backend/menuses/Convert_JSON2Menu.cs" />
+        <option value="$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs" />
+        <option value="$PROJECT_DIR$/Clint/backend/workers/GitWorker.cs" />
       </list>
     </option>
   </component>
@@ -251,6 +231,18 @@
               <item name="Clint" type="24d0babc:SolutionExplorerModelNode" />
               <item name="backend" type="24d0babc:SolutionExplorerModelNode" />
               <item name="menuses" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Clint" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Clint" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="backend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="workers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Clint" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UnitTests" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -316,12 +308,12 @@
       <option name="presentableId" value="Default" />
       <updated>1533109410305</updated>
       <workItem from="1533109417065" duration="2810000" />
-      <workItem from="1533112285810" duration="1695000" />
+      <workItem from="1533112285810" duration="4042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4505000" />
+    <option name="totallyTimeSpent" value="6852000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,36 +380,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Clint/Clint.cs">
+    <entry file="file://$PROJECT_DIR$/Clint/backend/enums/AutoCommit.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+        <state relative-caret-position="95">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
-            <marker date="1533110061499" expanded="false" signature="6:93" ph="..." />
-            <marker date="1533110061499" expanded="true" signature="167:5982" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="174:288" ph="/// This application serves as CLI for making templates inside code projects. ... " />
-            <marker date="1533110061499" expanded="true" signature="311:5980" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="326:578" ph="/// Chops line strings into lines and passes them to client as response.  ... " />
-            <marker date="1533110061499" expanded="true" signature="653:829" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="839:974" ph="///  ... " />
-            <marker date="1533110061499" expanded="true" signature="1052:1955" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="1089:1858" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="1259:1399" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="1529:1844" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="1875:1945" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="2014:2107" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="2150:2946" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="2561:2773" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="2636:2709" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="2790:2936" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="2986:5889" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="3629:3736" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="3807:3891" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="3948:5741" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="4086:5727" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="4484:5259" ph="{...}" />
-            <marker date="1533110061499" expanded="true" signature="5755:5879" ph="/* Console.Write($&quot;Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n&quot;); ... */" />
-            <marker date="1533110061499" expanded="true" signature="5930:5974" ph="{...}" />
+            <marker date="1533113147975" expanded="true" signature="29:143" ph="{...}" />
+            <marker date="1533113147975" expanded="true" signature="58:141" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -435,52 +404,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Clint/backend/FileWorker.cs">
+    <entry file="file://$PROJECT_DIR$/Clint/backend/menuses/Convert_JSON2Menu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="1216">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
-            <marker date="1533111252416" expanded="true" signature="53:74" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="6:115" ph="..." />
+            <marker date="1533114670457" expanded="true" signature="148:3080" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="155:216" ph="/* Converts between JSON and Menu Items list. ... */" />
+            <marker date="1533114670457" expanded="true" signature="244:3078" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="259:286" ph="/* ... */" />
+            <marker date="1533114670457" expanded="true" signature="339:812" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="362:461" ph="/* TODO: Fix the path top search from within the project ... */" />
+            <marker date="1533114670457" expanded="true" signature="621:802" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="884:1512" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="1075:1476" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="1109:1196" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="1233:1462" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="1562:2285" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="2333:3072" ph="{...}" />
+            <marker date="1533114670457" expanded="true" signature="2746:2875" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Clint/backend/enums/AutoCommit.cs">
+    <entry file="file://$PROJECT_DIR$/Clint/Clint.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="1957">
+          <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
           <folding>
-            <marker date="1533113147975" expanded="true" signature="29:143" ph="{...}" />
-            <marker date="1533113147975" expanded="true" signature="58:141" ph="{...}" />
+            <marker date="1533114723153" expanded="false" signature="6:93" ph="..." />
+            <marker date="1533114723153" expanded="true" signature="167:5873" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="174:288" ph="/// This application serves as CLI for making templates inside code projects. ... " />
+            <marker date="1533114723153" expanded="true" signature="311:5871" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="326:578" ph="/// Chops line strings into lines and passes them to client as response.  ... " />
+            <marker date="1533114723153" expanded="true" signature="653:829" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="839:974" ph="///  ... " />
+            <marker date="1533114723153" expanded="true" signature="1052:1955" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="1089:1858" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="1259:1399" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="1529:1844" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="1875:1945" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="2014:2107" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="2150:2946" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="2561:2773" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="2636:2709" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="2790:2936" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="2986:5780" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="3520:3627" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="3698:3782" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="3839:5632" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="3977:5618" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="4375:5150" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="5646:5770" ph="/* Console.Write($&quot;Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n&quot;); ... */" />
+            <marker date="1533114723153" expanded="true" signature="5821:5865" ph="{...}" />
+            <marker date="1533114723153" expanded="true" signature="5875:6383" ph="/* Ideas ... */" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Clint/backend/GitWorker.cs">
+    <entry file="file://$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1976">
-          <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+        <state relative-caret-position="429">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
           <folding>
-            <marker date="1533113979671" expanded="true" signature="110:144" ph="..." />
-            <marker date="1533113979671" expanded="true" signature="161:4247" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="194:4245" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="209:330" ph="/* Inner variables with fast accessors ... */" />
-            <marker date="1533113979671" expanded="true" signature="888:1015" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="1025:1063" ph="/* Inner methods ... */" />
-            <marker date="1533113979671" expanded="true" signature="1090:1814" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="1113:1804" ph="/* TODO Ask for login OR read it from global ... */" />
-            <marker date="1533113979671" expanded="true" signature="1842:2022" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="1865:2012" ph="/* TODO Assure, that there is .git and it is initialized ... */" />
-            <marker date="1533113979671" expanded="true" signature="2052:2539" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="2075:2529" ph="/* TODO Assure, that there is .git and it is initialized ... */" />
-            <marker date="1533113979671" expanded="true" signature="2618:2752" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="2632:2742" ph="/* TODO Fix location with current, if empty ... */" />
-            <marker date="1533113979671" expanded="true" signature="2852:3415" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="2866:3405" ph="/* TODO Ask about everything before acting on your own ... */" />
-            <marker date="1533113979671" expanded="true" signature="3470:3503" ph="{...}" />
-            <marker date="1533113979671" expanded="true" signature="3533:4032" ph="/* Returns current level of autoCommit flag. ... */" />
-            <marker date="1533113979671" expanded="true" signature="4042:4123" ph="///  ... " />
-            <marker date="1533113979671" expanded="true" signature="4159:4239" ph="{...}" />
+            <marker date="1533116465067" expanded="true" signature="31:2348" ph="{...}" />
+            <marker date="1533116465067" expanded="true" signature="61:2346" ph="{...}" />
+            <marker date="1533116465067" expanded="true" signature="76:164" ph="/* Variables ... */" />
+            <marker date="1533116465067" expanded="true" signature="173:257" ph="/// Holds last used command for checks. ... " />
+            <marker date="1533116465067" expanded="true" signature="312:399" ph="/* Constructors ... */" />
+            <marker date="1533116465067" expanded="true" signature="417:693" ph="/// Creates files and directories based on given list to tokenize. ... " />
+            <marker date="1533116465067" expanded="true" signature="738:892" ph="{...}" />
+            <marker date="1533116465067" expanded="true" signature="761:856" ph="/* TODO Call OS to create a file with console ... */" />
+            <marker date="1533116465067" expanded="true" signature="902:1201" ph="/// Parses list of tuples to change from to and changes those file's names one by one. ... " />
+            <marker date="1533116465067" expanded="true" signature="1250:1355" ph="{...}" />
+            <marker date="1533116465067" expanded="true" signature="1365:1641" ph="/// Removes files and directories based on given list to tokenize. ... " />
+            <marker date="1533116465067" expanded="true" signature="1686:1791" ph="{...}" />
+            <marker date="1533116465067" expanded="true" signature="1801:2032" ph="/// Reports about current location info. ... " />
+            <marker date="1533116465067" expanded="true" signature="2092:2204" ph="{...}" />
+            <marker date="1533116465067" expanded="true" signature="2260:2340" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clint/backend/workers/GitWorker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
+          <folding>
+            <marker date="1533116484595" expanded="true" signature="59:5002" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="66:171" ph="/// Wraps around series of commands in git to make it easier to use. ... " />
+            <marker date="1533116484595" expanded="true" signature="191:5000" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="206:327" ph="/* Inner variables with fast accessors ... */" />
+            <marker date="1533116484595" expanded="true" signature="902:1028" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="1038:1076" ph="/* Inner methods ... */" />
+            <marker date="1533116484595" expanded="true" signature="1103:1827" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="1126:1817" ph="/* TODO Ask for login OR read it from global ... */" />
+            <marker date="1533116484595" expanded="true" signature="1855:2035" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="1878:2025" ph="/* TODO Assure, that there is .git and it is initialized ... */" />
+            <marker date="1533116484595" expanded="true" signature="2065:2552" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="2088:2542" ph="/* TODO Assure, that there is .git and it is initialized ... */" />
+            <marker date="1533116484595" expanded="true" signature="2631:2765" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="2645:2755" ph="/* TODO Fix location with current, if empty ... */" />
+            <marker date="1533116484595" expanded="true" signature="2865:3428" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="2879:3418" ph="/* TODO Ask about everything before acting on your own ... */" />
+            <marker date="1533116484595" expanded="true" signature="3472:3635" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="3495:3625" ph="/* TODO check, if there is something to commit actually ... */" />
+            <marker date="1533116484595" expanded="true" signature="3690:3928" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="3713:3918" ph="/* TODO check, if there is something to push actually (was committed and hangs0 ... */" />
+            <marker date="1533116484595" expanded="true" signature="3958:4457" ph="/* Returns current level of autoCommit flag. ... */" />
+            <marker date="1533116484595" expanded="true" signature="4467:4612" ph="/// Returns last kept Command. ... " />
+            <marker date="1533116484595" expanded="true" signature="4646:4726" ph="{...}" />
+            <marker date="1533116484595" expanded="true" signature="4736:4897" ph="/// Returns current location of project, over which works GitWorker. ... " />
+            <marker date="1533116484595" expanded="true" signature="4937:4994" ph="{...}" />
           </folding>
         </state>
       </provider>

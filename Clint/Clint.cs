@@ -6,53 +6,47 @@ using System.IO;
 
 namespace Clint
 {
-    /* This application serves as CLI for making templates inside code projects.
-            Console.WriteLine("<C>ommand");
-            Console.WriteLine("<L>ine");
-            Console.WriteLine("<I>nterface");
-            Console.WriteLine("<N>ew");
-            Console.WriteLine("<T>emplar");
-     */
-    class Clint
+    /// <summary>
+    /// This application serves as CLI for making templates inside code projects.
+    /// </summary>
+    public class Clint
     {
-        private static void clientTalk(String given)
+        /// <summary>
+        /// Chops line strings into lines and passes them to client as response. 
+        /// </summary>
+        /// <param name="line">line to chop</param>
+        /// <param name="faceShown">flag of showing face, by default true</param>
+        private static void ClientTalk(string line, bool faceShown = true)
         {
-            //Chop given string to lines
-            String[] tokenized = given != null ? given.Split('\n') : new String[] { "" };
-            clientTalk(tokenized, true);
+            //Chop line string to lines
+            var tokens = line != null ? line.Split('\n') : new[] { "" };
+            ClientTalk(tokens, faceShown);
         }
 
-        private static void clientTalk(String given, bool faceShown)
-        {
-            //Chop given string to lines
-            String[] tokenized = given != null ? given.Split('\n') : new String[] { "" };
-            clientTalk(tokenized, faceShown);
-        }
-
-        private static void clientTalk(String[] given)
-        {
-            clientTalk(given, true);
-        }
-
-        private static void clientTalk(String[] given, bool faceShown)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="given"></param>
+        /// <param name="faceShown"></param>
+        private static void ClientTalk(string[] given, bool faceShown = true)
         {
             if (faceShown)
             {
                 //AsciiFace asciiFace = new AsciiFace();
-                String[] faceNow = AsciiFace.happyBot;
+                var faceNow = AsciiFace.happyBot;
                 if (given[0].StartsWith("KILL"))
                 {
                     faceNow = AsciiFace.killedBot;
-                    given = new String[]{"Aaaaccckhhh..."};
+                    given = new[]{"Aaaaccckhhh..."};
                 }
 
                 //foreach (var line in faceNow)
                 for (int i = 0; i < Math.Max(given.Length, faceNow.Length); i++)
                 {
-                    String lineLeft = i < faceNow.Length ? faceNow[i] : "          ";
-                    //TODO FIX CHOPPING TO THE END OF LINE
-                    String lineRight = i < given.Length ? given[i] : "";
-                    Console.WriteLine(lineLeft + " " + lineRight);
+                    var lineLeft = i < faceNow.Length ? faceNow[i] : "          ";
+                    // TODO FIX CHOPPING TO THE END OF LINE
+                    var lineRight = i < given.Length ? given[i] : "";
+                    Console.WriteLine($"{lineLeft} {lineRight}");
                 }
             }
             else
@@ -61,29 +55,53 @@ namespace Clint
             }
         }
 
-        static String clientAsks(String question)
+        private static string ClientAsks(String question)
         {
-            clientTalk(question);
-            String an_answer = Console.ReadLine();
-            return an_answer;
+            ClientTalk(question);
+            return Console.ReadLine();
         }
 
-        static void Main(string[] args)
+        private static void MakeMeAFile()
+        {
+            var currDirectory = Directory.GetCurrentDirectory();
+            ClientTalk("We are in " + currDirectory);
+            //Ask about name of file
+            var fileName = ClientAsks("How this file should be named?");
+            //Obtain current directory
+            var fullPathString = Path.Combine(currDirectory, fileName);
+            //
+            if (!File.Exists(fullPathString))
+            {
+                using (var fs = File.Create(fullPathString))
+                {
+                    fs.WriteByte(1);
+                }
+
+                ClientTalk("File was created.");
+            }
+            else
+            {
+                //TODO ADD PARAM IN STRING TO FILL WITH FILE NAME
+                ClientTalk("File already exists.");
+            }
+        }
+
+        private static void ShowMenu()
         {
             FastConsole.LineBreak();
             FastConsole.EmptyLine();
             //CHANGE THIS TRUE TO PROPERTY
-            clientTalk("Clint welcomes You:");
+            ClientTalk("Clint welcomes You:");
             FastConsole.EmptyLine();
             FastConsole.LineBreak();
             Console.WriteLine("How can help?");
             FastConsole.LineBreak();
             //TODO CONSUME JSON AND USE IT ON SCREEN
 
-            int numberOfItems = 0;
+            var numberOfItems = 0;
             //List<MenuItem> o = //JsonConvert.DeserializeObject<List<MenuItem>>(string json);
-            List<MenuItem> menuItems = Convert_JSON2Menu.parseJSONFile();//parseJSON();
-            foreach (MenuItem menuItem in menuItems) {
+            var menuItems = Convert_JSON2Menu.parseJSONFile();//parseJSON();
+            foreach (var menuItem in menuItems) {
                 Console.WriteLine(menuItem.asMenuEntry());
                 numberOfItems++;
             }
@@ -92,8 +110,8 @@ namespace Clint
             {
                 Console.WriteLine("9) Kill yourself!");
             }
-            
-            bool alive = true;
+
+            var alive = true;
             while (alive)
             {
                 var choice = Console.ReadLine();
@@ -101,63 +119,46 @@ namespace Clint
                 switch (choice)
                 {
                     case "1":
-                        String currDirectory = Directory.GetCurrentDirectory();
-                        clientTalk("We are in " + currDirectory);
-                        //Ask about name of file
-                        String fileName = clientAsks("How this file should be named?");
-                        //Obtain current directory
-                        String fullPathString = System.IO.Path.Combine(currDirectory, fileName);
-                        //
-                        if (!System.IO.File.Exists(fullPathString))
-                        {
-                            using (System.IO.FileStream fs = System.IO.File.Create(fullPathString))
-                            {
-                                fs.WriteByte(1);
-                            }
-
-                            clientTalk("File was created.");
-                        }
-                        else
-                        {
-                            //TODO ADD PARAM IN STRING TO FILL WITH FILE NAME
-                            clientTalk("File already exists.");
-                        }
-
+                        MakeMeAFile();
                         FastConsole.PressAnyKey();
                         break;
 
                     case "5":
-                        clientTalk("", true);
+                        ClientTalk("");
                         FastConsole.PressAnyKey();
                         break;
 
                     case "6":
-                        String[] longText = new String[]{"'dotnet.exe' (CoreCLR: DefaultDomain):",
+                        var longText = new[]{"'dotnet.exe' (CoreCLR: DefaultDomain):",
                             "Loaded 'C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\2.1.1\\System.Private.CoreLib.dll'.",
                             "Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.",
                             "dotnet.exe'(CoreCLR: clrhost): Loaded 'C:\\vsproj\\Clint\\Clint\\Clint\\bin\\Debug\\netcoreapp2.1\\Clint.dll'.",
                             "Symbols loaded.",
                             "dotnet.exe'(CoreCLR: clrhost): Loaded 'C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\2.1.1\\System.Runtime.dll'" +
                             ".Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled."};
-                        clientTalk(longText);
+                        ClientTalk(longText);
                         FastConsole.PressAnyKey();
                         break;
 
                     case "9":
-                        clientTalk("KILL");
+                        ClientTalk("KILL");
                         FastConsole.PressAnyKey();
                         alive = false;
                         break;
 
-                    //TODO add default here
                     default:
-                        clientTalk("I didn't get it.. what?!");
+                        ClientTalk("I didn't get it.. what?!");
                         break;
                 }
             }
 
             //Console.Write($"Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n");
             //pressAnyKey();
+        }
+
+        static void Main(string[] args)
+        {
+            ShowMenu();
         }
     }
 }

@@ -1,10 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Xunit;
 
 namespace UnitTests
 {
-    class ClintTests
+    public class ClintTests
     {
+        private readonly global::Clint.Clint _clint;
+
+        public ClintTests()
+        {
+            _clint = new global::Clint.Clint();
+        }
+
+        [Fact]
+        public void WelcomeTest()
+        {
+            ;//_clint.                
+        }
     }
 }

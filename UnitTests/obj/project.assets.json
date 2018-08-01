@@ -1598,7 +1598,6 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.7.0",
-          "Microsoft.NETCore.App": "2.1.0",
           "Newtonsoft.Json": "11.0.2"
         },
         "compile": {

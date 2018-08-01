@@ -1,37 +1,35 @@
-using Xunit;
 using Clint.backend;
+using Xunit;
 
-namespace UnitTests
+namespace UnitTests.backend
 {
     public class D20Tests
     {
-        private readonly D20 d20;// = new D20();
+        private readonly D20 _d20;
 
         public D20Tests()
         {
-            d20 = new D20();
+            _d20 = new D20();
         }
 
         [Fact]
         public void RollInRangeTest()
         {
-            int score = d20.Roll();
-
-            Assert.InRange(score,1,20);
+            var score = _d20.Roll();
+            Assert.InRange(score, 1, 20);
         }
 
         [Fact]
         public void InitiallyScoreIsEmptyTest()
         {
-            Assert.Equal(d20.LastScore(),-1);
+            Assert.Equal(_d20.LastScore(), -1);
         }
 
         [Fact]
         public void ReadLastRollTest()
         {
-            int score = d20.Roll();
-
-            Assert.Equal(d20.LastScore(), score);
+            var score = _d20.Roll();
+            Assert.Equal(_d20.LastScore(), score);
         }
     }
 }

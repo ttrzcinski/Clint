@@ -30,6 +30,9 @@
           <e p="model" t="Include">
             <e p="MenuItem.cs" t="Include" />
           </e>
+          <e p="utilities" t="Include">
+            <e p="StringExt.cs" t="Include" />
+          </e>
           <e p="workers" t="Include">
             <e p="FileWorker.cs" t="Include" />
             <e p="GitWorker.cs" t="Include" />
@@ -53,6 +56,7 @@
         <e p="backend" t="Include">
           <e p="AutoCommitTest.cs" t="Include" />
           <e p="D20Tests.cs" t="Include" />
+          <e p="StringExtTests.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="ClintTests.cs" t="Include" />

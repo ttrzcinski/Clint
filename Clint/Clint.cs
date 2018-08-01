@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Clint.backend.converters;
+using Clint.backend.utilities;
 
 //using System.Speech.Synthesis; //only in .NET Standard
 
@@ -31,6 +32,7 @@ namespace Clint
         /// <param name="faceShown">shows face, by default true</param>
         private static void ClientTalk(string[] lines, bool faceShown = true)
         {
+            FastConsole.AsWarning();
             if (faceShown)
             {
                 //AsciiFace asciiFace = new AsciiFace();
@@ -41,21 +43,37 @@ namespace Clint
                     lines = new[]{"Aaaaccckhhh..."};
                 }
 
-                //foreach (var line in faceNow)
-                for (int i = 0; i < Math.Max(lines.Length, faceNow.Length); i++)
+                for (var i = 0; i < Math.Max(lines.Length, faceNow.Length); i++)
                 {
                     var lineLeft = i < faceNow.Length ? faceNow[i] : "          ";
                     // TODO FIX CHOPPING TO THE END OF LINE
+                    // TODO Chop lines right split up to console's width - lineLeft and if longer, another part lands in next line 
                     var lineRight = i < lines.Length ? lines[i] : "";
-                    Console.WriteLine($"{lineLeft} {lineRight}");
-                }
+                    //Console.WriteLine("Line has {0} chars.", Console.WindowWidth);
+                    if (Console.WindowWidth < lineLeft.Length + lineRight.Length)
+                    {
+                        //It means, that lineRight must be chopped into pieces
+                        var lineRightSplit = lineRight.SplitAfter(Console.WindowWidth - lineLeft.Length);
+                        Console.WriteLine($"{lineLeft} {lineRight}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{lineLeft} {lineRight}");
+                    }
+            }
             }
             else
             {
                 Console.WriteLine(lines);
             }
+            FastConsole.AsDefault();
         }
 
+        /// <summary>
+        /// ASks give question to user and returns whole line of response.
+        /// </summary>
+        /// <param name="question">given question passed to user</param>
+        /// <returns>line of response</returns>
         private static string ClientAsks(string question)
         {
             ClientTalk(question);
@@ -87,9 +105,11 @@ namespace Clint
             }
         }
 
+        // TODO Take loading JSON to menu into some generic separate method.
+        
         private static void ShowMainMenu()
         {
-            var fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
+            const string fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\menu_main.json";
             var menuItems = CovertJSONTo.ParseJsonFile(fullPath);
             // If there was nothing
             if (menuItems.Count != 0)
@@ -107,7 +127,7 @@ namespace Clint
         
         private static void ShowGitMenu()
         {
-            var fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\git_menu.json";
+            const string fullPath = "C:\\vsproj\\Clint\\Clint\\Clint\\backend\\menuses\\git_menu.json";
             var menuItems = CovertJSONTo.ParseJsonFile(fullPath);
             // If there was nothing
             if (menuItems.Count != 0)
@@ -127,7 +147,7 @@ namespace Clint
         {
             FastConsole.LineBreak();
             FastConsole.EmptyLine();
-            //CHANGE THIS TRUE TO PROPERTY
+            // TODO CHANGE THIS TO PROPERTY
             ClientTalk("Clint welcomes You:");
             FastConsole.EmptyLine();
             FastConsole.LineBreak();

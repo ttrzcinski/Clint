@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af655307-9c9d-4161-be1c-fea547f2fcf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Clint/backend/converters/CovertJSONTo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clint/backend/utilities/StringExt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UnitTests/backend/StringExtTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clint/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clint/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clint/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clint/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clint/Clint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/Clint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/Clint.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/Clint.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/backend/converters/Convert_JSON2Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/converters/ConvertJSON2Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/backend/model/MenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/model/MenuItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clint/backend/FastConsole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/backend/FastConsole.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clint/bin/Debug/netcoreapp2.1/Clint.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/bin/Debug/netcoreapp2.1/Clint.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clint/bin/Debug/netcoreapp2.1/Clint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/bin/Debug/netcoreapp2.1/Clint.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clint/obj/Debug/netcoreapp2.1/Clint.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Clint/obj/Debug/netcoreapp2.1/Clint.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -26,7 +24,7 @@
     <session id="2111223070">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.opened" value="2" />
@@ -34,25 +32,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="21" />
+          <entry key="cs" value="26" />
           <entry key="json" value="3" />
+          <entry key="targets" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="21" />
+          <entry key="C#" value="26" />
           <entry key="JSON" value="3" />
+          <entry key="MsBuild targets file" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="5230" />
+          <entry key="cs" value="6775" />
           <entry key="json" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="5230" />
+          <entry key="C#" value="6775" />
           <entry key="JSON" value="118" />
         </counts>
       </usages-collector>
@@ -61,44 +61,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Clint/Clint.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1099">
-              <caret line="163" column="50" lean-forward="true" selection-start-line="163" selection-start-column="50" selection-end-line="163" selection-end-column="50" />
+            <state relative-caret-position="263">
+              <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
               <folding>
-                <marker date="1533124813426" expanded="true" signature="6:96" ph="..." />
-                <marker date="1533124813426" expanded="true" signature="171:7102" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="178:292" ph="/// This application serves as CLI for making templates inside code projects. ... " />
-                <marker date="1533124813426" expanded="true" signature="315:7100" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="330:572" ph="/// Chops line strings into lines and passes them to client as response.  ... " />
-                <marker date="1533124813426" expanded="true" signature="647:821" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="831:1050" ph="/// Passes lines them to client as response.  ... " />
-                <marker date="1533124813426" expanded="true" signature="1128:2031" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="1165:1934" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="1335:1475" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="1605:1920" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="1951:2021" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="2090:2183" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="2226:3043" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="2637:2849" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="2712:2785" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="2866:3033" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="3087:3623" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="3333:3512" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="3399:3498" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="3529:3613" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="3674:4209" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="3919:4098" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="3985:4084" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="4115:4199" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="4250:7008" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="4722:6860" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="4860:6846" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="5603:6378" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="6874:6998" ph="/* Console.Write($&quot;Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n&quot;); ... */" />
-                <marker date="1533124813426" expanded="true" signature="7049:7094" ph="{...}" />
-                <marker date="1533124813426" expanded="true" signature="7104:7612" ph="/* Ideas ... */" />
+                <marker date="1533130544710" expanded="true" signature="6:127" ph="..." />
+                <marker date="1533130544710" expanded="true" signature="202:8172" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="209:323" ph="/// This application serves as CLI for making templates inside code projects. ... " />
+                <marker date="1533130544710" expanded="true" signature="346:8170" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="361:603" ph="/// Chops line strings into lines and passes them to client as response.  ... " />
+                <marker date="1533130544710" expanded="true" signature="678:852" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="862:1081" ph="/// Passes lines them to client as response.  ... " />
+                <marker date="1533130544710" expanded="true" signature="1159:2755" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="1233:2621" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="1403:1543" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="1625:2607" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="1747:1918" ph="/* TODO FIX CHOPPING TO THE END OF LINE ... */" />
+                <marker date="1533130544710" expanded="true" signature="2155:2454" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="2479:2593" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="2638:2708" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="2765:2997" ph="/// ASks give question to user and returns whole line of response. ... " />
+                <marker date="1533130544710" expanded="true" signature="3055:3148" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="3191:4008" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="3602:3814" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="3677:3750" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="3831:3998" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="4138:4683" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="4393:4572" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="4459:4558" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="4589:4673" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="4734:5278" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="4988:5167" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="5054:5153" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="5184:5268" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="5319:8078" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="5792:7930" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="5930:7916" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="6673:7448" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="7944:8068" ph="/* Console.Write($&quot;Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n&quot;); ... */" />
+                <marker date="1533130544710" expanded="true" signature="8119:8164" ph="{...}" />
+                <marker date="1533130544710" expanded="true" signature="8174:8682" ph="/* Ideas ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clint/backend/utilities/StringExt.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+              <folding>
+                <marker date="1533131362371" expanded="true" signature="33:925" ph="{...}" />
+                <marker date="1533131362371" expanded="true" signature="69:923" ph="{...}" />
+                <marker date="1533131362371" expanded="true" signature="152:917" ph="{...}" />
+                <marker date="1533131362371" expanded="true" signature="395:824" ph="{...}" />
+                <marker date="1533131362371" expanded="true" signature="657:779" ph="{...}" />
+                <marker date="1533131362371" expanded="true" signature="841:907" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UnitTests/backend/StringExtTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <marker date="1533131660140" expanded="true" signature="6:43" ph="..." />
+                <marker date="1533131660140" expanded="true" signature="72:467" ph="{...}" />
+                <marker date="1533131660140" expanded="true" signature="106:465" ph="{...}" />
+                <marker date="1533131660140" expanded="true" signature="353:459" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clint/backend/FastConsole.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
+              <folding>
+                <marker date="1533129206581" expanded="true" signature="30:1018" ph="{...}" />
+                <marker date="1533129206581" expanded="true" signature="54:1016" ph="{...}" />
+                <marker date="1533129206581" expanded="true" signature="684:1010" ph="{...}" />
+                <marker date="1533129206581" expanded="true" signature="851:1000" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -136,15 +187,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Clint/backend/workers/GitWorker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clint/backend/converters/CovertJSONTo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTests/ClintTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTests/backend/AutoCommitTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UnitTests/backend/StringExtTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clint/backend/model/MenuItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clint/backend/enums/AutoCommit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clint/backend/utilities/StringExt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clint/backend/converters/ConvertJSON2Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clint/Clint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clint/backend/FastConsole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clint/backend/workers/GitWorker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clint/backend/enums/AutoCommit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTests/backend/D20Tests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -164,8 +218,11 @@
         <option value="$PROJECT_DIR$/Clint/backend/interfaces/Converter.cs" />
         <option value="$PROJECT_DIR$/Clint/backend/model/MenuItem.cs" />
         <option value="$PROJECT_DIR$/Clint/backend/converters/CovertJSONTo.cs" />
-        <option value="$PROJECT_DIR$/Clint/Clint.cs" />
         <option value="$PROJECT_DIR$/Clint/backend/workers/FileWorker.cs" />
+        <option value="$PROJECT_DIR$/Clint/backend/FastConsole.cs" />
+        <option value="$PROJECT_DIR$/Clint/Clint.cs" />
+        <option value="$PROJECT_DIR$/Clint/backend/utilities/StringExt.cs" />
+        <option value="$PROJECT_DIR$/UnitTests/backend/StringExtTests.cs" />
       </list>
     </option>
   </component>
@@ -321,12 +378,12 @@
       <option name="presentableId" value="Default" />
       <updated>1533109410305</updated>
       <workItem from="1533109417065" duration="2810000" />
-      <workItem from="1533112285810" duration="9844000" />
+      <workItem from="1533112285810" duration="15233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12654000" />
+    <option name="totallyTimeSpent" value="18043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,12 +398,12 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17400645" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17400645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49838883" visible="true" weight="0.32879817" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49677765" weight="0.32879817" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -357,8 +414,8 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" sideWeight="0.49946293" weight="0.23809524" />
       <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5016112" side_tool="true" visible="true" weight="0.32879817" />
-      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.4989259" weight="0.32879817" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50322235" side_tool="true" visible="true" weight="0.32879817" />
+      <window_info active="true" anchor="bottom" id="Build" order="14" sideWeight="0.49677765" visible="true" weight="0.32879817" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -428,22 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTests/backend/D20Tests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <marker date="1533110540135" expanded="true" signature="6:33" ph="..." />
-            <marker date="1533110540135" expanded="true" signature="62:664" ph="{...}" />
-            <marker date="1533110540135" expanded="true" signature="90:662" ph="{...}" />
-            <marker date="1533110540135" expanded="true" signature="158:208" ph="{...}" />
-            <marker date="1533110540135" expanded="true" signature="262:361" ph="{...}" />
-            <marker date="1533110540135" expanded="true" signature="425:493" ph="{...}" />
-            <marker date="1533110540135" expanded="true" signature="548:656" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -548,43 +589,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Clint/backend/FastConsole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
+          <folding>
+            <marker date="1533129206581" expanded="true" signature="30:1018" ph="{...}" />
+            <marker date="1533129206581" expanded="true" signature="54:1016" ph="{...}" />
+            <marker date="1533129206581" expanded="true" signature="684:1010" ph="{...}" />
+            <marker date="1533129206581" expanded="true" signature="851:1000" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Clint/Clint.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1099">
-          <caret line="163" column="50" lean-forward="true" selection-start-line="163" selection-start-column="50" selection-end-line="163" selection-end-column="50" />
+        <state relative-caret-position="263">
+          <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
           <folding>
-            <marker date="1533124813426" expanded="true" signature="6:96" ph="..." />
-            <marker date="1533124813426" expanded="true" signature="171:7102" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="178:292" ph="/// This application serves as CLI for making templates inside code projects. ... " />
-            <marker date="1533124813426" expanded="true" signature="315:7100" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="330:572" ph="/// Chops line strings into lines and passes them to client as response.  ... " />
-            <marker date="1533124813426" expanded="true" signature="647:821" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="831:1050" ph="/// Passes lines them to client as response.  ... " />
-            <marker date="1533124813426" expanded="true" signature="1128:2031" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="1165:1934" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="1335:1475" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="1605:1920" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="1951:2021" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="2090:2183" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="2226:3043" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="2637:2849" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="2712:2785" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="2866:3033" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="3087:3623" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="3333:3512" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="3399:3498" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="3529:3613" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="3674:4209" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="3919:4098" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="3985:4084" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="4115:4199" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="4250:7008" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="4722:6860" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="4860:6846" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="5603:6378" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="6874:6998" ph="/* Console.Write($&quot;Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n&quot;); ... */" />
-            <marker date="1533124813426" expanded="true" signature="7049:7094" ph="{...}" />
-            <marker date="1533124813426" expanded="true" signature="7104:7612" ph="/* Ideas ... */" />
+            <marker date="1533130544710" expanded="true" signature="6:127" ph="..." />
+            <marker date="1533130544710" expanded="true" signature="202:8172" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="209:323" ph="/// This application serves as CLI for making templates inside code projects. ... " />
+            <marker date="1533130544710" expanded="true" signature="346:8170" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="361:603" ph="/// Chops line strings into lines and passes them to client as response.  ... " />
+            <marker date="1533130544710" expanded="true" signature="678:852" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="862:1081" ph="/// Passes lines them to client as response.  ... " />
+            <marker date="1533130544710" expanded="true" signature="1159:2755" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="1233:2621" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="1403:1543" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="1625:2607" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="1747:1918" ph="/* TODO FIX CHOPPING TO THE END OF LINE ... */" />
+            <marker date="1533130544710" expanded="true" signature="2155:2454" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="2479:2593" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="2638:2708" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="2765:2997" ph="/// ASks give question to user and returns whole line of response. ... " />
+            <marker date="1533130544710" expanded="true" signature="3055:3148" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="3191:4008" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="3602:3814" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="3677:3750" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="3831:3998" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="4138:4683" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="4393:4572" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="4459:4558" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="4589:4673" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="4734:5278" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="4988:5167" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="5054:5153" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="5184:5268" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="5319:8078" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="5792:7930" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="5930:7916" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="6673:7448" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="7944:8068" ph="/* Console.Write($&quot;Push the button, {name}, to stop wasting time on {date:d} {date:t} ...\n\n&quot;); ... */" />
+            <marker date="1533130544710" expanded="true" signature="8119:8164" ph="{...}" />
+            <marker date="1533130544710" expanded="true" signature="8174:8682" ph="/* Ideas ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTests/backend/D20Tests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <marker date="1533110540135" expanded="false" signature="6:33" ph="..." />
+            <marker date="1533110540135" expanded="true" signature="62:664" ph="{...}" />
+            <marker date="1533110540135" expanded="true" signature="90:662" ph="{...}" />
+            <marker date="1533110540135" expanded="true" signature="158:208" ph="{...}" />
+            <marker date="1533110540135" expanded="true" signature="262:361" ph="{...}" />
+            <marker date="1533110540135" expanded="true" signature="425:493" ph="{...}" />
+            <marker date="1533110540135" expanded="true" signature="548:656" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clint/backend/utilities/StringExt.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <folding>
+            <marker date="1533131362371" expanded="true" signature="33:925" ph="{...}" />
+            <marker date="1533131362371" expanded="true" signature="69:923" ph="{...}" />
+            <marker date="1533131362371" expanded="true" signature="152:917" ph="{...}" />
+            <marker date="1533131362371" expanded="true" signature="395:824" ph="{...}" />
+            <marker date="1533131362371" expanded="true" signature="657:779" ph="{...}" />
+            <marker date="1533131362371" expanded="true" signature="841:907" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/dotnet/sdk/2.1.301/Microsoft.Common.CurrentVersion.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="4171" column="4" selection-start-line="4171" selection-start-column="4" selection-end-line="4171" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTests/backend/StringExtTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <marker date="1533131660140" expanded="true" signature="6:43" ph="..." />
+            <marker date="1533131660140" expanded="true" signature="72:467" ph="{...}" />
+            <marker date="1533131660140" expanded="true" signature="106:465" ph="{...}" />
+            <marker date="1533131660140" expanded="true" signature="353:459" ph="{...}" />
           </folding>
         </state>
       </provider>

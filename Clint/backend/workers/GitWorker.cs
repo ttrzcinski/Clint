@@ -125,6 +125,17 @@ namespace Clint.backend.workers
             // TODO Call console with git push
         }
 
+        public void merge(string branchName)
+        {
+            // TODO Read name of current branch
+
+            // TODO Check, if there will be some errors with merging
+
+            // TODO Call the console to merge
+
+            // TODO Refresh current repo with fetch, status, pull
+        }
+
         //Accessors
         /*public void Auto(AutoCommit flag)
         {

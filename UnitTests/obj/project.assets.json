@@ -5474,11 +5474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\vsproj\\Clint\\Clint\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "c:\\vsproj\\Clint\\Clint\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\vsproj\\Clint\\Clint\\UnitTests\\UnitTests.csproj",
+      "projectPath": "c:\\vsproj\\Clint\\Clint\\UnitTests\\UnitTests.csproj",
       "packagesPath": "C:\\Users\\ttrzcins\\.nuget\\packages\\",
-      "outputPath": "C:\\vsproj\\Clint\\Clint\\UnitTests\\obj\\",
+      "outputPath": "c:\\vsproj\\Clint\\Clint\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5497,8 +5497,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\vsproj\\Clint\\Clint\\Clint\\Clint.csproj": {
-              "projectPath": "C:\\vsproj\\Clint\\Clint\\Clint\\Clint.csproj"
+            "c:\\vsproj\\Clint\\Clint\\Clint\\Clint.csproj": {
+              "projectPath": "c:\\vsproj\\Clint\\Clint\\Clint\\Clint.csproj"
             }
           }
         }

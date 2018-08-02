@@ -5,7 +5,7 @@ namespace Clint.backend.utilities
         public static string[] SplitAfter(this string value, int lineLength)
         {
             //Check, if value has content
-            if (string.IsNullOrEmpty(value) || lineLength < 1) return new[] {value};
+            if (string.IsNullOrWhiteSpace(value) || lineLength < 1) return null;//new[] {value};
             //Check, if given value is longer, than lineLength
             if (value.Length > lineLength)
             {

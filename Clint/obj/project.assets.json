@@ -5254,11 +5254,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\vsproj\\Clint\\Clint\\Clint\\Clint.csproj",
+      "projectUniqueName": "c:\\vsproj\\Clint\\Clint\\Clint\\Clint.csproj",
       "projectName": "Clint",
-      "projectPath": "C:\\vsproj\\Clint\\Clint\\Clint\\Clint.csproj",
+      "projectPath": "c:\\vsproj\\Clint\\Clint\\Clint\\Clint.csproj",
       "packagesPath": "C:\\Users\\ttrzcins\\.nuget\\packages\\",
-      "outputPath": "C:\\vsproj\\Clint\\Clint\\Clint\\obj\\",
+      "outputPath": "c:\\vsproj\\Clint\\Clint\\Clint\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5293,7 +5293,6 @@
             "version": "[15.7.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
